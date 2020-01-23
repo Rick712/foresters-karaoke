@@ -1,0 +1,150 @@
+* {
+  font-family: 'Work Sans', sans-serif; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  margin: 0; }
+
+.slide {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 2rem;
+  box-sizing: border-box; }
+  .slide h1 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 100px;
+    margin: 0;
+    width: 80vw; }
+  .slide h2 {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 50px;
+    margin: 0; }
+  .slide span {
+    font-weight: 600;
+    position: absolute;
+    font-size: 350px;
+    right: 0;
+    bottom: 0;
+    color: #ffe2e2;
+    text-transform: uppercase;
+    z-index: 10; }
+  .slide div {
+    z-index: 99; }
+  .slide#regels span {
+    opacity: 0.4; }
+  .slide#regels p {
+    font-size: 50px;
+    font-weight: 600;
+    margin: 2em 0; }
+  .slide#later .liedjes {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 47.5% 47.5%;
+    grid-column-gap: 5%;
+    grid-row-gap: 20px; }
+    .slide#later .liedjes .liedje {
+      display: grid;
+      grid-template-columns: 35% 65%;
+      grid-column-gap: 30px; }
+      .slide#later .liedjes .liedje h2 {
+        font-weight: 600;
+        font-size: 40px;
+        align-self: center;
+        text-align: right; }
+      .slide#later .liedjes .liedje p {
+        font-size: 30px;
+        align-self: center; }
+
+.admin {
+  padding: 0 2rem; }
+  .admin .header {
+    position: fixed;
+    width: calc(100vw - 4rem);
+    background: white;
+    top: 0;
+    padding-top: 2rem;
+    border-bottom: solid grey 1px; }
+  .admin .aanvragen input {
+    font-size: 20px;
+    border: solid red 1px;
+    padding: 5px; }
+  .admin .aanvragen a {
+    margin-left: 20px;
+    border: solid black 5px;
+    padding: 5px;
+    font-weight: 600;
+    cursor: pointer; }
+    .admin .aanvragen a:hover {
+      background: black;
+      color: white; }
+  .admin .speler #next {
+    margin: 30px 0 10px 0;
+    display: block;
+    padding: 30px 40px;
+    background: red;
+    border-radius: 50px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    border: solid red 5px; }
+    .admin .speler #next:hover {
+      background: white;
+      color: red; }
+  .admin .nu .liedje {
+    display: block;
+    margin: 20px 0; }
+    .admin .nu .liedje * {
+      display: inline; }
+    .admin .nu .liedje span {
+      margin-left: 20px; }
+    .admin .nu .liedje h1 {
+      font-weight: 400;
+      font-size: 20px;
+      margin-left: 50px;
+      color: blue; }
+  .admin .later {
+    margin-top: 300px; }
+    .admin .later * {
+      font-size: 20px; }
+  .admin .wanneer {
+    font-size: 40px;
+    font-weight: 600; }
+  .admin .liedje {
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    align-items: center;
+    min-width: 700px; }
+    .admin .liedje div {
+      display: flex; }
+    .admin .liedje .id {
+      margin-top: 2.3rem; }
+    .admin .liedje h2 {
+      font-weight: 600;
+      margin-left: 2rem; }
+      .admin .liedje h2 span {
+        font-weight: 400; }
+      .admin .liedje h2 a {
+        color: blue;
+        font-weight: 400;
+        cursor: pointer; }
+      .admin .liedje h2 * {
+        display: block; }
+    .admin .liedje .delete {
+      color: red;
+      cursor: pointer;
+      font-weight: 700; }
+    .admin .liedje .up, .admin .liedje .down {
+      cursor: pointer; }
+    .admin .liedje .controls * {
+      margin-left: .5rem; }
